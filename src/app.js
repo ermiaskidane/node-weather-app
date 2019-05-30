@@ -34,8 +34,7 @@ app.get("", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About page",
-    image: "/img/e.jpg",
-    name: "ermias pic"
+    image: "/img/e.jpg"
   });
 });
 
