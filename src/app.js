@@ -8,6 +8,7 @@ const hbs = require("hbs");
 // console.log(__filename);
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // express.use for costumize the server
 // Define path for express config To customize views directory
@@ -135,6 +136,10 @@ app.get("*", (req, res) => {
 //     location: "leicester"
 //   });
 // });
-app.listen(3000, () => {
-  console.log("server is up on port 3000");
+// app.listen(3000, () => {
+//   console.log("server is up on port 3000");
+// });
+
+app.listen(port, () => {
+  console.log("server is up on port " + port);
 });
