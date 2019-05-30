@@ -22,11 +22,11 @@ const forecast = (latitude, longitude, callback) => {
           " fehranheit in timezone " +
           response.body.timezone +
           "." +
-          "The minimam tempreture is " +
-          response.body.daily.data[0].temperatureMin +
-          " fehranheit and maximam tempreture is " +
-          response.body.daily.data[0].temperatureMax +
-          "fehranheit."
+          "The high today is " +
+          response.body.daily.data[0].temperatureHigh +
+          " fehranheit with low " +
+          response.body.daily.data[0].temperatureLow +
+          " fehranheit."
       );
     }
   });
