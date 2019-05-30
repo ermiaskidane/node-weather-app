@@ -20,7 +20,12 @@ const forecast = (latitude, longitude, callback) => {
           " the temperature is " +
           response.body.currently.temperature +
           " fehranheit in timezone " +
-          response.body.timezone
+          response.body.timezone +
+          "." +
+          " minimam tempreture is " +
+          response.body.daily.data[0].temperatureMin +
+          " and maximam tempreture  is " +
+          response.body.daily.data[0].temperatureMax
       );
     }
   });
